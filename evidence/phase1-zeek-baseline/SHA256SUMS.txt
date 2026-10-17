@@ -1,0 +1,7 @@
+# SOC-003 Phase 1 -- SHA256 evidence inventory
+# Generated: 2026-10-16 (EAT)
+# Verify with: sha256sum -c SHA256SUMS.txt  (run from ~/soc-lab/soc-003)
+
+b0dd85494fa4383bae3bba1c8c8bfe7b372f70443f494ff3ea22ae8004145427  scripts/gen_phase1_synthetic_pcap.py
+18de849818195361ec7471799f90fab7398009fa777151744124c88f0bc76c11  evidence/phase1-zeek-baseline/phase1-synthetic-baseline.pcap
+fe32083341b32b81aede3d7c6c814b4f05da1bbb434413a306999cf3fe8dbf69  evidence/phase1-zeek-baseline/pcap-validation-tshark.txt

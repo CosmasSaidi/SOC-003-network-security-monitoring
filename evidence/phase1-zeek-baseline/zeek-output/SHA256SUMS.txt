@@ -1,0 +1,13 @@
+# SOC-003 Phase 1.2 -- SHA256 inventory of generated Zeek evidence
+# Generated: 2026-10-16T13:05:55+03:00 (EAT)
+# Verify with: cd ~/soc-lab/soc-003/evidence/phase1-zeek-baseline/zeek-output && sha256sum -c SHA256SUMS.txt
+# Input PCAP (preserved, unmodified) sha256 = 18de849818195361ec7471799f90fab7398009fa777151744124c88f0bc76c11
+
+214ad1245e8bbfe06ceb4107b43ba2af484a49d1ba030c43c0aaf33cb630c736  conn.log
+dab4ba358753ab329fe2200fc682600eea26c30a20676b867fd05a70194321e6  dns.log
+559b89ee3c185a26a6919ea54aec7a4d87f4df0bc594e3317fcdf80d33330411  files.log
+af116c715e9b1f281ac2cd2c4c9e2f3bc8f5d06ca030ed7cb588d324e1522995  http.log
+7bb7e6fb0421505beb32675ba7c359872454a6c9f7a1110b9734b188187a60d9  packet_filter.log
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  zeek-run-stderr.txt
+57cc0d888b15e26645705d183e6a3dc864ef67b3556ef8be1427bfc4427cb70d  zeek-run-metadata.txt
+a6ebb4f41f4b7afba02e4bd29caa7f281af5eb63e69bb89ba6950c7e5176c2fd  zeek-telemetry-summary.json

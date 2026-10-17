@@ -1,0 +1,30 @@
+# SOC-003 .gitignore (focused, preserves portfolio evidence)
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+
+# Editor/OS
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary analysis output
+/tmp/
+*.tmp
+*.bak
+*.old
+
+# Large transient packages (local installation artifacts)
+packages/*.deb
+!packages/README.md
+
+# Large runtime/generated artifacts - keep small evidence, consider excluding very large
+# PCAPs/pcapng - keep for portfolio evidence; if repo size becomes concern, can be external
+# But for portfolio completeness, often kept; review before commit

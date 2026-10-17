@@ -1,0 +1,350 @@
+{
+  "phase": "SOC-003 Phase 2",
+  "generated": "2026-10-16T13:38:59+03:00",
+  "input_pcap": {
+    "path": "evidence/phase2-controlled-network-behaviour/phase2-controlled-network-behaviour.pcap",
+    "sha256": "c63484f083f409c3dd58e01064bac9c0ae2e52a5bffa3dbad05aff6f04201780",
+    "packets": 215,
+    "duration_seconds": 450.093,
+    "bytes": 19600,
+    "encapsulation": "Ethernet",
+    "strict_time_order": true
+  },
+  "generator": {
+    "path": "scripts/gen_phase2_synthetic_pcap.py",
+    "runs": 2,
+    "byte_identical": true
+  },
+  "zeek": {
+    "version": "9.0.0",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "json_logs": true,
+    "logs": [
+      "conn.log",
+      "dns.log",
+      "http.log",
+      "files.log",
+      "notice.log",
+      "phase2_detections.log",
+      "packet_filter.log"
+    ]
+  },
+  "detections": [
+    "DET-201",
+    "DET-202",
+    "DET-203"
+  ],
+  "metrics": {
+    "true_positives": 3,
+    "false_positives": 0,
+    "coverage": 1.0,
+    "precision": 1.0,
+    "false_negatives_measurable": false
+  },
+  "verification": {
+    "script": "scripts/verify_phase2.sh",
+    "checks_passed": 17,
+    "checks_failed": 0,
+    "result": "PASS",
+    "record": "evidence/phase2-controlled-network-behaviour/analysis/final-verification.txt",
+    "record_excluded_from_inventory": true,
+    "reason": "self-referential"
+  },
+  "files": [
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/README.md",
+      "sha256": "4fbfd5f2ab4bc6f58519012a56c99aa8ab93e47190983a02ab98749c9e071ae0",
+      "bytes": 4013,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/analysis/conn-analysis.txt",
+      "sha256": "03183496a88bff11e91f84aa1852e84fa7571d242a2e77529eb8e1ef172ad05a",
+      "bytes": 2078,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/analysis/detection-metrics.json",
+      "sha256": "bb19c2b792ddb4bb9dc1ae376ffa057b729cb6dcdec16be9a3c7797ac291ff44",
+      "bytes": 1752,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/analysis/detection-validation.txt",
+      "sha256": "9c1fa2f091b8735a033f369a560657dde63778c83d1029a10af6367d5e5e3a65",
+      "bytes": 1504,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/analysis/dns-analysis.txt",
+      "sha256": "48ff482a93300c8bbf1af394bf4897ae1bc96c522d286f5e5d986b63a8ca5f55",
+      "bytes": 946,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/analysis/http-analysis.txt",
+      "sha256": "ae3c00e30e34d7134f3b10f232c1c921b9f8f4f860b7edc449fbaf69cc3e3945",
+      "bytes": 1152,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/analysis/periodicity-analysis.txt",
+      "sha256": "2bb4f0abbcca46b97478026ea489460a0ed270205804ea9fba571fb8f8d12c29",
+      "bytes": 643,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/analysis/telemetry-summary.json",
+      "sha256": "156d81109357494654c59650bde55da97ad84e38301d888a376b967541adc710",
+      "bytes": 9161,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/detections/README.md",
+      "sha256": "47a03d1454cf56d351ef1010ae2e9a06a790b9938d4c1973e685545b2c39a06c",
+      "bytes": 311,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/detections/detection-records.ndjson",
+      "sha256": "45c176530e159797f539c62794e1151f8317a201c6cd846c49457ab333b00513",
+      "bytes": 3203,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/integrity/post-phase2-integrity-check.txt",
+      "sha256": "174437b943f1a3e59b2c9371ac3925543319853734c1553ecab1b6e2c9bf32ba",
+      "bytes": 47597,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/integrity/pre-phase2-baseline.txt",
+      "sha256": "e8a1024233d5c1e0a3297c00907a0e128e878576c92d0495c523cf7566f00f56",
+      "bytes": 47264,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/investigation/conn-extract-service-discovery.txt",
+      "sha256": "807a314b7ed1092126774b0c09fdc1da48dc725cfe814719325d6bfb7713c7f2",
+      "bytes": 3066,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/investigation/detection-extract.txt",
+      "sha256": "6056a80467fa05abef73a3745b8ea49499377a65e80e47b9c10d63904c8e7365",
+      "bytes": 2714,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/investigation/dns-extract-all.txt",
+      "sha256": "569d5b8fb59def0d5f4c43adfdb29f9a4192a3b3ddf2ee40f170bd8fe8231bd9",
+      "bytes": 4432,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/investigation/http-extract-all.txt",
+      "sha256": "f15d53f04862b6d2f10b0d5c198ffde9a4f56062c4b99c93f89cdb6f640edcbe",
+      "bytes": 1538,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/investigation/timeline.txt",
+      "sha256": "2803c20324ba08f9e0f8f71460e5751e7c6e7b5ddda1cfe975fa16d1d4a4b0a7",
+      "bytes": 2503,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/limitations.txt",
+      "sha256": "6081583c0a0b37dca705bc4c8dc326278c6912261c4f847b9762ab35ff8144b4",
+      "bytes": 4847,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/pcap-validation-capinfos.txt",
+      "sha256": "e80cde55fc212f9a44ac6f4c3768504911152d9e8ec4e8bca66861e5fdbaf190",
+      "bytes": 1277,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/pcap-validation-tshark-summary.txt",
+      "sha256": "425681fd20b3fe560aba687bdf2b5f295d26e71ab05be42f40afb20d9cf1c071",
+      "bytes": 3076,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/phase2-controlled-network-behaviour.pcap",
+      "sha256": "c63484f083f409c3dd58e01064bac9c0ae2e52a5bffa3dbad05aff6f04201780",
+      "bytes": 19600,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/reproducibility/reproducibility-check.txt",
+      "sha256": "fbc4c44ffaa83cfeeef464d3665cdca8d130e8b98d45bf23aa36db8135daaa18",
+      "bytes": 1114,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/reproducibility/run1.pcap",
+      "sha256": "c63484f083f409c3dd58e01064bac9c0ae2e52a5bffa3dbad05aff6f04201780",
+      "bytes": 19600,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/reproducibility/run2.pcap",
+      "sha256": "c63484f083f409c3dd58e01064bac9c0ae2e52a5bffa3dbad05aff6f04201780",
+      "bytes": 19600,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/conn.log",
+      "sha256": "d3e5ec4f9fba3eb35546577709eee853d53710d0b35caf173221a37814594507",
+      "bytes": 25840,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/dns.log",
+      "sha256": "73ffca0cf0408eeebcd3bd04fca964a532b56b240cdc67afc17c9ef99378a4ef",
+      "bytes": 14665,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/files.log",
+      "sha256": "b77985a6474798c796ca015a6c89b730e25a55e7db927efc2768870cc23acded",
+      "bytes": 3670,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/http.log",
+      "sha256": "f8b68611810115a9a350030223b20bd4be1e17b5c46c66dfc88e87986e10fde8",
+      "bytes": 4377,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/notice.log",
+      "sha256": "da8c8849e52e42cdfa4b7c80d97634bb1c6b9d3bc9704d144fdce680f1be1d7f",
+      "bytes": 1010,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/packet_filter.log",
+      "sha256": "704210119f69c7dceea6a4ed99856f9c171c0edde26012bafc49f933df1e0f0b",
+      "bytes": 90,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/phase2_detections.log",
+      "sha256": "f87c972b8b80519801fb85045c61cc1a1d80ea779680fb1b2d3ce78fabfa9410",
+      "bytes": 1491,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/zeek-run-metadata.txt",
+      "sha256": "979544d02ceb07f7b1d5f81fff8830c4c3fc2403ccc49faf952da6a6c66d7fbe",
+      "bytes": 2515,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/zeek-run-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "bundle"
+    },
+    {
+      "path": "evidence/phase2-controlled-network-behaviour/zeek-run/zeek-run-stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "bundle"
+    },
+    {
+      "path": "PHASE2_REPORT.md",
+      "sha256": "e05023983668b4b87b0f68890144b2be83adc9c3fad8aad788987f00b517238b",
+      "bytes": 28775,
+      "role": "source"
+    },
+    {
+      "path": "README.md",
+      "sha256": "4c8847cc9334d02048290d551501b6f35da7f8ea5766cada563f64a0389d1310",
+      "bytes": 2975,
+      "role": "source"
+    },
+    {
+      "path": "analysis/ATTACK_ASSESSMENT.md",
+      "sha256": "fdf0e586631eb9c06641bc20ca9471d147a8e8bf69a2145f791223a13473c319",
+      "bytes": 6968,
+      "role": "source"
+    },
+    {
+      "path": "cases/CASE-201-network-service-discovery.md",
+      "sha256": "88543370d218cc0fd0eb4882b6a6a98fd457a473fd47c122694f3b64ef1cd486",
+      "bytes": 1686,
+      "role": "source"
+    },
+    {
+      "path": "detections/README.md",
+      "sha256": "ddd7aef78357f465078eac953d8319b35332ef48745a3e3248d89da730409288",
+      "bytes": 9354,
+      "role": "source"
+    },
+    {
+      "path": "detections/zeek/det-201-service-discovery.zeek",
+      "sha256": "106e587fe88d51c1f2aeabe10018982596646efb7d88f47095193d8efa1b9514",
+      "bytes": 5741,
+      "role": "source"
+    },
+    {
+      "path": "detections/zeek/det-202-dns-burst.zeek",
+      "sha256": "54cc842928605de68f442c2d09ee8256ae6ec5a2e687d566afe2fb8a650de84f",
+      "bytes": 3560,
+      "role": "source"
+    },
+    {
+      "path": "detections/zeek/det-203-periodic-http.zeek",
+      "sha256": "df31e0750d53d06e73134f9039e0093dd4cff4a1b54b56432ac6d0a44eb3bedd",
+      "bytes": 4454,
+      "role": "source"
+    },
+    {
+      "path": "detections/zeek/det-common.zeek",
+      "sha256": "6084b39e8af5d0494901a270cd61790aaef40ad936719fbf6cfcd78d9b421d5c",
+      "bytes": 2695,
+      "role": "source"
+    },
+    {
+      "path": "detections/zeek/phase2-load.zeek",
+      "sha256": "b2ebb82282af852fe3c4ceaa3ca61c7cd2673ff6b4282bb4ec4307988a3115ce",
+      "bytes": 357,
+      "role": "source"
+    },
+    {
+      "path": "investigations/INV-201-network-service-discovery.md",
+      "sha256": "f8069b90e40fc28d7d7f4878eeb0a1c8acfb0f63fd1ad96593fd017f41e5fc2d",
+      "bytes": 13668,
+      "role": "source"
+    },
+    {
+      "path": "scripts/analyze_phase2.py",
+      "sha256": "aacfba6315077c237745df71477660e1cc411ba0a170f98692b2d197a343cacd",
+      "bytes": 14041,
+      "role": "source"
+    },
+    {
+      "path": "scripts/gen_phase1_synthetic_pcap.py",
+      "sha256": "b0dd85494fa4383bae3bba1c8c8bfe7b372f70443f494ff3ea22ae8004145427",
+      "bytes": 6593,
+      "role": "source"
+    },
+    {
+      "path": "scripts/gen_phase2_synthetic_pcap.py",
+      "sha256": "89c5dbdc3c01f936b5a7b6379d4f3d25afeab51489ea8f29903df5cf0008069f",
+      "bytes": 14237,
+      "role": "source"
+    },
+    {
+      "path": "scripts/verify_phase2.sh",
+      "sha256": "30ce106450366d00b39415a24255516b33cbf7d37b858b5334adfcb0377c1562",
+      "bytes": 5795,
+      "role": "source"
+    }
+  ]
+}

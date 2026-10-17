@@ -1,0 +1,7 @@
+# SOC-003 Phase 4B -- hashes anchored at ~/soc-lab/soc-003
+# Verify with: sha256sum -c evidence/phase4b-suricata-install/hashes/SHA256SUMS.txt  (from ~/soc-lab/soc-003)
+21448205843126f622886f4929172696884171fd007679fd8cf6c9e6863adb63  detections/suricata/soc003-lab.rules
+e7523c28eb05035368dc459d272c37f6eae06f2d5ffab1ffc2d37d1a606cddcc  detections/suricata/README.md
+d38277b29cc4647be0df898e4b713c827772943c33ca547845a64a9dc2f89758  scripts/phase4b_analyze.py
+ee29f87695d1c2b5082f3730735ca7974d2a3eea0e7a980b0fba4416ebea6e3c  PHASE4B_REPORT.md
+a1f799151d06f6b807240e87500758e9ecf76716ab438e56e46ecf2cfdbc4c1a  evidence/phase4b-suricata-install/SHA256SUMS.txt

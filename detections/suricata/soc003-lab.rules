@@ -1,0 +1,29 @@
+# ---------------------------------------------------------------------------
+# SOC-003 lab Suricata rules -- PHASE 4B controlled offline validation
+#
+# Scope : DETERMINISTIC Phase 2 synthetic PCAP only
+#         (~/soc-lab/soc-003/evidence/phase2-controlled-network-behaviour/
+#          phase2-controlled-network-behaviour.pcap, SHA256 c63484f0...1780)
+# Author: saidi  (hand-written for SOC-003; no vendor ruleset is present)
+# These are LOCAL, lab-scoped behavioural rules. They are NOT vendor/ET
+# signatures and MUST NOT be read as generic scanning / DNS-tunnelling / C2
+# detection. See detections/suricata/README.md for purpose, trigger,
+# expected result and limitations.
+# ---------------------------------------------------------------------------
+
+# DET-201 analogue -- controlled network service discovery (Phase 2 block B)
+# Observable behaviour: >=10 zero-payload TCP SYN probes from one HOME_NET host
+# to the lab service-port set on non-HOME_NET destinations within 60 s.
+# Phase 2 ground truth: 20 such probes from 192.168.56.150 in ~5.7 s.
+alert tcp $HOME_NET any -> $EXTERNAL_NET [22,80,443,445,3389] (msg:"SOC-003 LAB DET-201 network service discovery - repeated empty SYN probes"; flow:stateless; flags:S; dsize:0; threshold:type threshold, track by_src, count 10, seconds 60; classtype:network-scan; metadata:soc-003-lab, phase2, det-201; sid:9003001; rev:1;)
+
+# DET-202 analogue -- controlled DNS burst (Phase 2 block C)
+# Observable behaviour: >=20 DNS queries from one HOME_NET host within 60 s.
+# Phase 2 ground truth: 30 queries from 192.168.56.151 in ~9.6 s.
+alert dns $HOME_NET any -> any 53 (msg:"SOC-003 LAB DET-202 DNS burst - high-volume lookups from a single lab host"; flow:to_server; dns.query; content:"lab.test"; nocase; threshold:type threshold, track by_src, count 20, seconds 60; classtype:misc-activity; metadata:soc-003-lab, phase2, det-202; sid:9003002; rev:1;)
+
+# DET-203 analogue -- periodic HTTP (Phase 2 block D)
+# Observable behaviour: >=4 repeated GETs to the same /api/v1/heartbeat path
+# from one HOME_NET host within 300 s.
+# Phase 2 ground truth: 6 such requests from 192.168.56.152, 30.000 s apart.
+alert http $HOME_NET any -> any 80 (msg:"SOC-003 LAB DET-203 periodic HTTP - repeated heartbeat path requests"; flow:established,to_server; http.method; content:"GET"; http.uri; content:"/api/v1/heartbeat"; threshold:type threshold, track by_src, count 4, seconds 300; classtype:policy-violation; metadata:soc-003-lab, phase2, det-203; sid:9003003; rev:1;)

@@ -1,0 +1,65 @@
+# SOC-003 Phase 2 -- SHA256 evidence inventory
+# Generated: 2026-10-16T13:38:59+03:00
+# Verify from this directory (the bundle's hashes/ folder):
+#     sha256sum -c SHA256SUMS.txt
+# Paths are relative to this directory.
+#
+# Input PCAP sha256 = c63484f083f409c3dd58e01064bac9c0ae2e52a5bffa3dbad05aff6f04201780
+#
+# EXCLUDED BY DESIGN: analysis/final-verification.txt. That file records the
+# result of running the inventory check itself, so including it would be
+# self-referential (its content changes every time the check is recorded).
+# Everything else in the bundle is covered.
+
+## Bundle artifacts
+4fbfd5f2ab4bc6f58519012a56c99aa8ab93e47190983a02ab98749c9e071ae0  ../README.md
+03183496a88bff11e91f84aa1852e84fa7571d242a2e77529eb8e1ef172ad05a  ../analysis/conn-analysis.txt
+bb19c2b792ddb4bb9dc1ae376ffa057b729cb6dcdec16be9a3c7797ac291ff44  ../analysis/detection-metrics.json
+9c1fa2f091b8735a033f369a560657dde63778c83d1029a10af6367d5e5e3a65  ../analysis/detection-validation.txt
+48ff482a93300c8bbf1af394bf4897ae1bc96c522d286f5e5d986b63a8ca5f55  ../analysis/dns-analysis.txt
+ae3c00e30e34d7134f3b10f232c1c921b9f8f4f860b7edc449fbaf69cc3e3945  ../analysis/http-analysis.txt
+2bb4f0abbcca46b97478026ea489460a0ed270205804ea9fba571fb8f8d12c29  ../analysis/periodicity-analysis.txt
+156d81109357494654c59650bde55da97ad84e38301d888a376b967541adc710  ../analysis/telemetry-summary.json
+47a03d1454cf56d351ef1010ae2e9a06a790b9938d4c1973e685545b2c39a06c  ../detections/README.md
+45c176530e159797f539c62794e1151f8317a201c6cd846c49457ab333b00513  ../detections/detection-records.ndjson
+174437b943f1a3e59b2c9371ac3925543319853734c1553ecab1b6e2c9bf32ba  ../integrity/post-phase2-integrity-check.txt
+e8a1024233d5c1e0a3297c00907a0e128e878576c92d0495c523cf7566f00f56  ../integrity/pre-phase2-baseline.txt
+807a314b7ed1092126774b0c09fdc1da48dc725cfe814719325d6bfb7713c7f2  ../investigation/conn-extract-service-discovery.txt
+6056a80467fa05abef73a3745b8ea49499377a65e80e47b9c10d63904c8e7365  ../investigation/detection-extract.txt
+569d5b8fb59def0d5f4c43adfdb29f9a4192a3b3ddf2ee40f170bd8fe8231bd9  ../investigation/dns-extract-all.txt
+f15d53f04862b6d2f10b0d5c198ffde9a4f56062c4b99c93f89cdb6f640edcbe  ../investigation/http-extract-all.txt
+2803c20324ba08f9e0f8f71460e5751e7c6e7b5ddda1cfe975fa16d1d4a4b0a7  ../investigation/timeline.txt
+6081583c0a0b37dca705bc4c8dc326278c6912261c4f847b9762ab35ff8144b4  ../limitations.txt
+e80cde55fc212f9a44ac6f4c3768504911152d9e8ec4e8bca66861e5fdbaf190  ../pcap-validation-capinfos.txt
+425681fd20b3fe560aba687bdf2b5f295d26e71ab05be42f40afb20d9cf1c071  ../pcap-validation-tshark-summary.txt
+c63484f083f409c3dd58e01064bac9c0ae2e52a5bffa3dbad05aff6f04201780  ../phase2-controlled-network-behaviour.pcap
+fbc4c44ffaa83cfeeef464d3665cdca8d130e8b98d45bf23aa36db8135daaa18  ../reproducibility/reproducibility-check.txt
+c63484f083f409c3dd58e01064bac9c0ae2e52a5bffa3dbad05aff6f04201780  ../reproducibility/run1.pcap
+c63484f083f409c3dd58e01064bac9c0ae2e52a5bffa3dbad05aff6f04201780  ../reproducibility/run2.pcap
+d3e5ec4f9fba3eb35546577709eee853d53710d0b35caf173221a37814594507  ../zeek-run/conn.log
+73ffca0cf0408eeebcd3bd04fca964a532b56b240cdc67afc17c9ef99378a4ef  ../zeek-run/dns.log
+b77985a6474798c796ca015a6c89b730e25a55e7db927efc2768870cc23acded  ../zeek-run/files.log
+f8b68611810115a9a350030223b20bd4be1e17b5c46c66dfc88e87986e10fde8  ../zeek-run/http.log
+da8c8849e52e42cdfa4b7c80d97634bb1c6b9d3bc9704d144fdce680f1be1d7f  ../zeek-run/notice.log
+704210119f69c7dceea6a4ed99856f9c171c0edde26012bafc49f933df1e0f0b  ../zeek-run/packet_filter.log
+f87c972b8b80519801fb85045c61cc1a1d80ea779680fb1b2d3ce78fabfa9410  ../zeek-run/phase2_detections.log
+979544d02ceb07f7b1d5f81fff8830c4c3fc2403ccc49faf952da6a6c66d7fbe  ../zeek-run/zeek-run-metadata.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ../zeek-run/zeek-run-stderr.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ../zeek-run/zeek-run-stdout.txt
+
+## Source, detection and documentation artifacts (outside the bundle)
+e05023983668b4b87b0f68890144b2be83adc9c3fad8aad788987f00b517238b  ../../../PHASE2_REPORT.md
+4c8847cc9334d02048290d551501b6f35da7f8ea5766cada563f64a0389d1310  ../../../README.md
+fdf0e586631eb9c06641bc20ca9471d147a8e8bf69a2145f791223a13473c319  ../../../analysis/ATTACK_ASSESSMENT.md
+88543370d218cc0fd0eb4882b6a6a98fd457a473fd47c122694f3b64ef1cd486  ../../../cases/CASE-201-network-service-discovery.md
+ddd7aef78357f465078eac953d8319b35332ef48745a3e3248d89da730409288  ../../../detections/README.md
+106e587fe88d51c1f2aeabe10018982596646efb7d88f47095193d8efa1b9514  ../../../detections/zeek/det-201-service-discovery.zeek
+54cc842928605de68f442c2d09ee8256ae6ec5a2e687d566afe2fb8a650de84f  ../../../detections/zeek/det-202-dns-burst.zeek
+df31e0750d53d06e73134f9039e0093dd4cff4a1b54b56432ac6d0a44eb3bedd  ../../../detections/zeek/det-203-periodic-http.zeek
+6084b39e8af5d0494901a270cd61790aaef40ad936719fbf6cfcd78d9b421d5c  ../../../detections/zeek/det-common.zeek
+b2ebb82282af852fe3c4ceaa3ca61c7cd2673ff6b4282bb4ec4307988a3115ce  ../../../detections/zeek/phase2-load.zeek
+f8069b90e40fc28d7d7f4878eeb0a1c8acfb0f63fd1ad96593fd017f41e5fc2d  ../../../investigations/INV-201-network-service-discovery.md
+aacfba6315077c237745df71477660e1cc411ba0a170f98692b2d197a343cacd  ../../../scripts/analyze_phase2.py
+b0dd85494fa4383bae3bba1c8c8bfe7b372f70443f494ff3ea22ae8004145427  ../../../scripts/gen_phase1_synthetic_pcap.py
+89c5dbdc3c01f936b5a7b6379d4f3d25afeab51489ea8f29903df5cf0008069f  ../../../scripts/gen_phase2_synthetic_pcap.py
+30ce106450366d00b39415a24255516b33cbf7d37b858b5334adfcb0377c1562  ../../../scripts/verify_phase2.sh

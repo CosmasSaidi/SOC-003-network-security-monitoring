@@ -1,0 +1,70 @@
+# SOC-003 Phase 3 -- SHA256 evidence inventory
+# Generated: 2026-10-16T14:18:07.933153+03:00
+# Verify from this directory (the bundle's hashes/ folder):
+#     sha256sum -c SHA256SUMS.txt
+# Paths are relative to this directory.
+#
+# Input PCAP sha256:
+#   gate1 window1 = 9c1334c0d60500c7e949ad8389af6455879c7b51075be5ae4960bc0df628b68c
+#   gate1 window2 = afc9ed09ea60d047633208319fa46d2afe0e01f578ddf46b31eb962233425581
+#   gate2         = 564b1fe0518ee45b1c0188ef885bd5578ab74359f3fe6e91082ee81febf299aa
+#
+# EXCLUDED BY DESIGN: hashes/SHA256SUMS.txt and hashes/manifest.json --
+# they record the inventory of everything else, so including them would be
+# self-referential.
+
+## Bundle artifacts
+e2253e09bb1d628981431bd3c6d86818c41eb423f4945e4b5de3d67f8d1cd4fe  ../README.md
+a4cad858747b01fd9ac4e3c9f510fd5c0cbf9e5695df9057895b36c7328cc195  ../analysis/detection-results.txt
+d197ed9094a13d921d59266866ef209ace01d680b0ca5777d0c382c2fb15f475  ../analysis/dns-activity.txt
+85ec9209354b6b85109cc830f53a1395f756e5e2f2a9b84eda64b82fce9f9789  ../analysis/final-verification.txt
+c23cc0a1cb966d6333c4ef2a61dea567a13b83c10f601c331a17e7e263c75f77  ../analysis/hosts-and-protocols.txt
+deb77d7868569129f22757b5a142981ebb84adf2197151bb3849b5f366b2c82b  ../analysis/http-activity.txt
+b0e1f12b43928b04f5d87c073b8a95704cf61c8222040116c34bbbbde2830b68  ../analysis/safety-address-check.txt
+5e6b678cc93d659b12ebb67468dde7fc7c56ebaa39980bbe49523afc9da5da88  ../analysis/telemetry-summary.json
+d4ddc7b62885929c1b4ffa1c3a18e4d98cd5151a4b1d1b8d3e89e370197c438f  ../analysis/zeek-telemetry-summary.txt
+72746afdf63066ca5771026dd3509e7983f90fa183fc8453a83291f321d3596b  ../gate1/README.md
+bcf4a77eabaa6364038647dc99c0b85d47e8454580d61e990fc1f81e163b023f  ../gate1/capture-command.txt
+bf9a2eedd13602d2c0dbe4c3189671ee90ff3585435891196930fa3faea0e183  ../gate1/capture-run.log
+9c1334c0d60500c7e949ad8389af6455879c7b51075be5ae4960bc0df628b68c  ../gate1/gate1-visibility.pcap
+f7f85c116fb4bbd2efd8f6afafcfeb1315e083a208db0e03949adfb31a06f341  ../gate1/pcap-validation-capinfos.txt
+12ea4d774583d533bb3f1c8a1a7635095b84fbbf4e71be5ea09e558514a8bff3  ../gate1/pcap-validation-tshark.txt
+bf3ad1e28e972187f03241f3d29c332eb4de96d63f0446ef6ddbc63350eda211  ../gate1/visibility-analysis.txt
+5e90107ab3cbe209ebaeabdf9a214336dc3272f761e06fef0303f35c2ae118d1  ../gate1/window2/capture-command.txt
+050cf7364aff72f4fe746296cbbe8f204b93ba3a91b2af869b7269b6aa8d51c8  ../gate1/window2/capture-run.log
+afc9ed09ea60d047633208319fa46d2afe0e01f578ddf46b31eb962233425581  ../gate1/window2/gate1-window2-visibility.pcap
+f52882af2fff2cfbe9556fa1221022ed42300a8744f9ef897d7a677e64888e81  ../gate1/window2/pcap-validation-capinfos.txt
+dc457a1c87c34a6c101e846c286f46aa7489df2da8ec7d1aea4a5106abfa65c6  ../gate1/window2/pcap-validation-tshark.txt
+f5ede59123eabe9096268745ae452eba36cc467416272080658d02c12940b8ca  ../gate2/capture-command.txt
+ab1b8a025cb71040eb9715a630ddc66883e3380c4303d9c5d9f123fafae903fe  ../gate2/capture-run.log
+564b1fe0518ee45b1c0188ef885bd5578ab74359f3fe6e91082ee81febf299aa  ../gate2/gate2-benign-lab-traffic.pcap
+5f8009feadcdf609263df312aa6418241ffb459c7844b7fbd3bfe930222158c3  ../gate2/pcap-validation-capinfos.txt
+b3c7bde172c8b9c796037801e6052bde862263d8949ed1b46cda7820e30d73fa  ../integrity/post-phase3-integrity-check.txt
+3516a203b7a7c352660e826621f509e68be3f8b55aed26085b9aab624c5dca1d  ../integrity/pre-phase3-baseline.txt
+7b4a6b82d44766b4a48782fbf71c47a19ace42b9b8b018dd21629dcc968d9533  ../zeek-run/gate1/conn.log
+a1b0f8c57303d0b0c2a7f27aa48fbb31da508074ae45cf32a18377af42971903  ../zeek-run/gate1/packet_filter.log
+2c406dbe4c8604461453de7ad932059c61174f01689a89e4812dc4a49f695f24  ../zeek-run/gate1/reporter.log
+aef381473a41a734fefc9e81f3106dc6e14c97fb6861d10100c0eed2e58a7180  ../zeek-run/gate1/weird.log
+5ff6d9ea300952fdbea92f06c24023e444c0fd0d66f0e796c3667d130aaf2175  ../zeek-run/gate1/zeek-run-metadata.txt
+66e63d914d47136af5ed348ff993332b32d6138febb6d99d4469896114c1bc23  ../zeek-run/gate1/zeek-run-stderr.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ../zeek-run/gate1/zeek-run-stdout.txt
+b42f8cd635582e3c343a3c864dd0858929ae191939809cdcdb2f62754e3eeaed  ../zeek-run/gate2/conn.log
+5513aae29f425b8adb53c4cc1e443d386b520b40b82ae205bbac40f9ca32d513  ../zeek-run/gate2/dns.log
+e1762170578ec98e0a4df4d81b7e0e80747b8c1513394fe5a72e4c26590fa094  ../zeek-run/gate2/packet_filter.log
+d11f1f25c5920cb55c7720ca86c40d3b1ecc0bffdd9a8d16bffd43686a597d3f  ../zeek-run/gate2/reporter.log
+1eb2f8f6aff49451cb7f1a093316cb45bd87f151f29a4f1d6db5735a5423cd11  ../zeek-run/gate2/weird.log
+1feef61f2eb69bf4f88ed23b6d0aa97fff58011c02a9a017f49bb56bea9ead7a  ../zeek-run/gate2/zeek-run-metadata.txt
+f0e7d57a7ecb19cc8dc78047a3a1d548b4e12f839ad2986d3e221a7f5aa189f6  ../zeek-run/gate2/zeek-run-stderr.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ../zeek-run/gate2/zeek-run-stdout.txt
+
+## Source / detection artifacts (outside the bundle)
+6354ae866bb5e965a7c920a3b03596bb95d255316f76f276d36aa143473f0aba  ../../../PHASE3_REPORT.md
+2ee5eb57167ed2c170575fe3716f5bb6c30df81bf5eb0e08054e01aa06bb8d43  ../../../PHASE3_PREFLIGHT_REPORT.md
+4c8847cc9334d02048290d551501b6f35da7f8ea5766cada563f64a0389d1310  ../../../README.md
+1c06fd1ccaba0c066cb2b8229a0506ab290cddbf1ebede3d041563311a02122d  ../../../scripts/phase3_analyze.py
+e74d400918c452840dcd8459721d27d20e98d8480bd8cd68f55766ea07020b64  ../../../scripts/phase3_integrity.sh
+106e587fe88d51c1f2aeabe10018982596646efb7d88f47095193d8efa1b9514  ../../../detections/zeek/det-201-service-discovery.zeek
+54cc842928605de68f442c2d09ee8256ae6ec5a2e687d566afe2fb8a650de84f  ../../../detections/zeek/det-202-dns-burst.zeek
+df31e0750d53d06e73134f9039e0093dd4cff4a1b54b56432ac6d0a44eb3bedd  ../../../detections/zeek/det-203-periodic-http.zeek
+6084b39e8af5d0494901a270cd61790aaef40ad936719fbf6cfcd78d9b421d5c  ../../../detections/zeek/det-common.zeek
+b2ebb82282af852fe3c4ceaa3ca61c7cd2673ff6b4282bb4ec4307988a3115ce  ../../../detections/zeek/phase2-load.zeek

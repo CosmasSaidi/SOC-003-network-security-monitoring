@@ -1,0 +1,218 @@
+{
+  "generated": "2026-10-16T14:43:40.781960+03:00",
+  "phase": "SOC-003 Phase 3B",
+  "status": "PARTIAL/BLOCKED -- objective not met (lab quiet; no AD/DNS traffic captured)",
+  "input_pcap_sha256": "addfcd3f32a612e7c729df9dbe1528de25569aa7e99c17f7de0f71c5849276f7",
+  "entries": [
+    {
+      "path": "../README.md",
+      "sha256": "65ba1a86c5b794ca4f1ba03e49091c7912c9d7f449b8878784ab88169ea46421",
+      "bytes": 1993,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/ad-related-traffic.txt",
+      "sha256": "ef52db37db8436cd6fc24cedd8c9d7c56ecf06a27fb1077597f937507c9db762",
+      "bytes": 1358,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/detection-results.txt",
+      "sha256": "6c6fe02aa3e2370ec4a151031c3d510d5516449464bde791a2b341de3386f538",
+      "bytes": 2559,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/dns-activity.txt",
+      "sha256": "7e268c1c411165a67d678efee3c20ad4d9af608d6a7321ff7c018ccd183b7da8",
+      "bytes": 1268,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/final-verification.txt",
+      "sha256": "bebe4d27e58472f1330d1b699930b669192c6b83b0f54ebca9bae0b7c70a024e",
+      "bytes": 5407,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/hosts-and-protocols.txt",
+      "sha256": "e656c2f6e4f4a8b019656b14b9e36066db80f14031f4b97b844794e5e8aa9b7d",
+      "bytes": 1638,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/http-activity.txt",
+      "sha256": "757b3fa3f9ff4dbf8c8c97b183d66bbfd8f7f433bd972685d5e0cf5c6a5392f5",
+      "bytes": 350,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/limitations.txt",
+      "sha256": "f37d06de8a7a5ac3d2f1da003c723b265bb8a173f3f29755ede408bc4f83e239",
+      "bytes": 3232,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/safety-address-check.txt",
+      "sha256": "d7c054e149b530be5db91326984fa8e6dadde28accb49075e1baf2494b892225",
+      "bytes": 843,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/tcp-activity.txt",
+      "sha256": "8c1871020079249acaf2991051d49a22454f327d561498a44d92b5872e476093",
+      "bytes": 540,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/telemetry-summary.json",
+      "sha256": "0e8182024ab82b7932ce1a4406cc477b5d989f2e6c0ab9f9ea157c74f9593dbb",
+      "bytes": 1956,
+      "role": "bundle"
+    },
+    {
+      "path": "../analysis/zeek-telemetry-summary.txt",
+      "sha256": "076c235b12c32a77a5bcde3b6930fb5121ab96ef826267dba4f5a8f31f9ab50f",
+      "bytes": 904,
+      "role": "bundle"
+    },
+    {
+      "path": "../capture/capture-command.txt",
+      "sha256": "2764f2474844943eccf4bab07cf96162b51f6dae2126b9868bf74f3daed94938",
+      "bytes": 910,
+      "role": "bundle"
+    },
+    {
+      "path": "../capture/capture-run.log",
+      "sha256": "2f06fd5bef285784723ea0069d58ab00433d85020a3f3faaec22c3aabd0c327b",
+      "bytes": 727,
+      "role": "bundle"
+    },
+    {
+      "path": "../capture/pcap-validation-capinfos.txt",
+      "sha256": "da4e0454e0c758ac039a30ac2c6950120e89facba2dfb320b55bc56ca512cab1",
+      "bytes": 1470,
+      "role": "bundle"
+    },
+    {
+      "path": "../capture/pcap-validation-tshark.txt",
+      "sha256": "f34e346fa5042f18c2ca539166f1d1ea407e823c6932fcb9c2c7d0a5a101d4e8",
+      "bytes": 5018,
+      "role": "bundle"
+    },
+    {
+      "path": "../capture/phase3b-benign-ad.pcap",
+      "sha256": "addfcd3f32a612e7c729df9dbe1528de25569aa7e99c17f7de0f71c5849276f7",
+      "bytes": 2884,
+      "role": "bundle"
+    },
+    {
+      "path": "../capture/phase3b-benign-ad.pcap.sha256.txt",
+      "sha256": "c1c2312a04cfd1748ee654f56b37de9dc1574e3cac8856b04b439b69703d2434",
+      "bytes": 97,
+      "role": "bundle"
+    },
+    {
+      "path": "../integrity/phase3b-integrity-diff.txt",
+      "sha256": "a2cf8ffb8ccafe35d2ab5e4446b0f4c6b4fa00b5910fb0047680260e00603fca",
+      "bytes": 255,
+      "role": "bundle"
+    },
+    {
+      "path": "../integrity/post-phase3b-integrity-check.txt",
+      "sha256": "4af40c36f0b1b617a48869be661538eb5b7b663ccb8ffddca248a86068cc6cb9",
+      "bytes": 52734,
+      "role": "bundle"
+    },
+    {
+      "path": "../integrity/pre-phase3b-baseline.txt",
+      "sha256": "e9322ec58781008f04c2e9f01e88fc3f2ba7fd547fe1a02d5cfe952821c72d43",
+      "bytes": 52639,
+      "role": "bundle"
+    },
+    {
+      "path": "../zeek-run/ABSENT-LOGS.txt",
+      "sha256": "ca371e391b4573cedda4c7c6a7b9c6f64f4ff0262e85102569e442beca3ef257",
+      "bytes": 1706,
+      "role": "bundle"
+    },
+    {
+      "path": "../zeek-run/conn.log",
+      "sha256": "1fa779de6fe2b5cc919b44431efd2f2f5ec797d67f4ec44e449cf450750b46cf",
+      "bytes": 1190,
+      "role": "bundle"
+    },
+    {
+      "path": "../zeek-run/dns.log",
+      "sha256": "efab1469ae0f5bbada6e3d92381b2170845bb8fb0552091435dbc79484bb8362",
+      "bytes": 2262,
+      "role": "bundle"
+    },
+    {
+      "path": "../zeek-run/packet_filter.log",
+      "sha256": "35719dec3fbcbe8e0c3671ddad16ebfde6606bc8a23ae805324fd0ecf04547c0",
+      "bytes": 90,
+      "role": "bundle"
+    },
+    {
+      "path": "../zeek-run/zeek-run-metadata.txt",
+      "sha256": "779345281f19fea44afbfdf365e657163038e4ab637ced81d02f9edfd416b283",
+      "bytes": 600,
+      "role": "bundle"
+    },
+    {
+      "path": "../zeek-run/zeek-run-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "bundle"
+    },
+    {
+      "path": "../zeek-run/zeek-run-stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "bundle"
+    },
+    {
+      "path": "../../../detections/zeek/det-201-service-discovery.zeek",
+      "sha256": "106e587fe88d51c1f2aeabe10018982596646efb7d88f47095193d8efa1b9514",
+      "bytes": 5741,
+      "role": "source"
+    },
+    {
+      "path": "../../../detections/zeek/det-202-dns-burst.zeek",
+      "sha256": "54cc842928605de68f442c2d09ee8256ae6ec5a2e687d566afe2fb8a650de84f",
+      "bytes": 3560,
+      "role": "source"
+    },
+    {
+      "path": "../../../detections/zeek/det-203-periodic-http.zeek",
+      "sha256": "df31e0750d53d06e73134f9039e0093dd4cff4a1b54b56432ac6d0a44eb3bedd",
+      "bytes": 4454,
+      "role": "source"
+    },
+    {
+      "path": "../../../detections/zeek/det-common.zeek",
+      "sha256": "6084b39e8af5d0494901a270cd61790aaef40ad936719fbf6cfcd78d9b421d5c",
+      "bytes": 2695,
+      "role": "source"
+    },
+    {
+      "path": "../../../detections/zeek/phase2-load.zeek",
+      "sha256": "b2ebb82282af852fe3c4ceaa3ca61c7cd2673ff6b4282bb4ec4307988a3115ce",
+      "bytes": 357,
+      "role": "source"
+    },
+    {
+      "path": "../../../scripts/phase3b_analyze.py",
+      "sha256": "2707fec5ad30731dd6e09e0153235f4cc73e85170aaaa4350756c6164977ba2d",
+      "bytes": 19627,
+      "role": "source"
+    },
+    {
+      "path": "../../../scripts/phase3_integrity.sh",
+      "sha256": "e74d400918c452840dcd8459721d27d20e98d8480bd8cd68f55766ea07020b64",
+      "bytes": 3189,
+      "role": "source"
+    }
+  ]
+}
